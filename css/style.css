@@ -1,0 +1,121 @@
+/**/
+@charset "utf-8";
+body {
+
+background-color: #cccccc;
+}
+.content h1 {
+  text-align: center;
+}
+
+.content p {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+  margin: auto
+}
+
+#index .btn {
+  margin: 25px 10px;
+}
+
+
+p,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+img {
+  margin: 0 27px;
+}
+
+.times {
+  position: relative;
+  margin:10px auto;
+  padding: 0px 0px 0px 0px;
+}
+
+.hours {
+  position: relative;
+  margin: 10px 10px 10px 10px;
+  float: 
+}
+
+.minutes {
+  position: relative;
+  margin: 10px 10px 10px 10px;
+  
+}
+
+.seconds {
+  position: relative;
+  margin: 10px 10px 10px 10px;
+    
+}
+
+#startpage .btn  {
+  margin: 20px auto;
+  text-align: center;
+  
+}
+
+input { 
+  width: 100px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+input[type="button"].ready {
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  width: 200px;
+  display: block;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+}
+
+input[type="button"].ready:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #009cd3;
+  
+}
+ 
+.ok h2 {
+  font-size: 20px;
+  margin: 0 50px;
+  margin-bottom: 0;
+  color: red;
+  text-align: center;
+}
+
+.ok h3 {
+  padding: 0;
+  margin: 0; 
+  color: green;
+  text-align: center;
+}
+
+input[value="START!!"]{
+  margin: 10px 10px 10px 10px;
+}
+
+input[value="STOP!!"]{
+  margin: 10px 10px 10px 10px
+}
+
+input[value="COMPELTE!!"]{
+  margin: 10px 10px 10px 10px
+}
+
+#span1 {
+  margin: 40px auto;
+}
+
+
+  
