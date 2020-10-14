@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    ons.ready(function() {
+      console.log("Onsen UI is ready!");
+    });
+
+    if (ons.platform.isIPhoneX()) {
+      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+    }
+  </script>
+
+  <title>Time Manager</title>
+</head>
+<body id="startpage">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/app.js"></script> 
+<header></header>
+<div id="wrap">
+  <div class="content">
+  <h1>Time Manager</h1>
+  <p>作業予定時間を設定してください</p>
+  <br>
+  
+  <div class="times">
+    <form name="form1">
+    <div class="hours">
+      <select id="hours">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+      </select>時間
+    </div>
+  </form>
+  <form name="form2">
+  <div class="minutes">
+    <select id="minutes">
+      <option value="0">0</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+      <option value="35">35</option>
+      <option value="40">40</option>
+      <option value="45">45</option>
+      <option value="50">50</option>
+      <option value="55">55</option>
+    </select>分
+  </div>
+  </form>
+  <form name="form3">
+  <div class="seconds">
+    <select id="seconds">
+      <option value="0">0</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+      <option value="35">35</option>
+      <option value="40">40</option>
+      <option value="45">45</option>
+      <option value="50">50</option>
+      <option value="55">55</option>
+    </select>秒
+  </div>
+  </form>
+  </div>
+  <input type="button" value="ready?" class="ready" onclick="clickBtn1();clickBtn2();clickBtn3()"/>
+  
+<br>
+<form name="timer">
+<div class="ok">
+  <h2>選択した時間</h2><h3><br><span id="span1"></span>時間<span id="span2"></span>分<span id="span3"></span>秒</h3>
+</div>
+    <input type="button" id="start" value="START!!" onclick="cntStart()">
+    <input type="button" value="STOP!!" onclick="cntStop()">
+    <input type="button" value="COMPELTE!!" onclick="cntfinish()">
+  </form>
+<p class="btn"><a href="index.html">back</a></p>
+<p class="btn"><a href="index.html">return</a></p>
+  </div>
+</div>
+<footer>(c)2019 project nakai</footer>
+
+</body>
+</html>
+
+
